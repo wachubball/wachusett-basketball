@@ -169,6 +169,10 @@ input:focus,select:focus,textarea:focus{outline:3px solid var(--green);outline-o
 footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
 .foot{max-width:1180px;margin:0 auto;padding:28px 16px;display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between;font-size:.95rem}
 .foot strong{color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em}
+.social{display:flex;flex-wrap:wrap;gap:10px}
+.social a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.9rem;padding:8px 14px;border:2px solid currentColor}
+footer .social a{color:#fff}
+footer .social a:hover{background:var(--green);border-color:var(--green)}
 .towns{font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;color:#fff}
 @media (prefers-reduced-motion:no-preference){.page:not([hidden]){animation:in .25s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
 </style>
@@ -516,6 +520,7 @@ footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
     </form>
     <div class="grid" style="grid-template-columns:1fr">
       <div class="card"><h3>Email</h3><p><a id="emailAddr" href="mailto:wachusetttravelbasketball@gmail.com" style="font-weight:600;word-break:break-all">wachusetttravelbasketball@gmail.com</a></p><div><button class="btn ghost" type="button" id="copyEmail">Copy email</button></div></div>
+      <div class="card"><h3>Follow us</h3><p class="muted">News, game-day photos and reminders all season.</p><div class="social"><a href="https://www.facebook.com/wachutravel" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.7v8h3.3z"/></svg>Facebook</a></div></div>
       <div class="card"><h3>Board of Directors</h3><ul class="plain board-list"><li>Adam Deluca</li><li>Tom Sullivan</li><li>Mike Leahy</li><li>Jay Blackburn</li><li>Tim Yurkus</li><li>Sabrina Heiniluoma</li></ul></div>
     </div>
   </div>
@@ -531,6 +536,7 @@ footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
 <footer>
   <div class="foot">
     <div><strong>Wachusett Travel Basketball</strong><br>A private, non-profit youth program.<br>wachusetttravelbasketball@gmail.com<br>Member of the Central Mass Youth Basketball League.<br><a href="#camps" data-go="camps" style="color:#8fd1a8">Join our mailing list</a></div>
+    <div class="social" aria-label="Social media"><a href="https://www.facebook.com/wachutravel" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.7v8h3.3z"/></svg>Facebook</a></div>
     <div class="towns">Holden | Paxton | Princeton | Rutland | Sterling<br><span style="letter-spacing:.06em;color:#8fd1a8">wachusetttravelbasketball.com</span></div>
   </div>
 </footer>
