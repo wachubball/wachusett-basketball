@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wachusett Travel Basketball</title>
+<meta name="description" content="Wachusett Travel Basketball: competitive CMYBL basketball for boys and girls in grades 4 to 8 from Holden, Paxton, Princeton, Rutland and Sterling.">
+<meta property="og:title" content="Wachusett Travel Basketball">
+<meta property="og:description" content="Tryouts, schedules, practices and FAQ for Wachusett Travel Basketball, grades 4 to 8.">
+<meta property="og:image" content="https://wachusettbasketball.com/images/banner.jpg">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: a varsity-gym site. Sticky green nav, banner hero, one "page" shown at a time like Google Sites pages. */
+:root{
+  --green:#0f6b3a; --green-deep:#0a4a28; --green-tint:#e6f1ea;
+  --ink:#121614; --muted:#56615a; --line:#d5ded8;
+  --bg:#f7f9f7; --card:#ffffff; --on-green:#ffffff; --hard:#0b0d0c;
+  --wood:#b9773a;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --green:#2f9a5e; --green-deep:#0d3d22; --green-tint:#14271c;
+  --ink:#e8eee9; --muted:#9fb0a5; --line:#2a352e;
+  --bg:#0d110f; --card:#151b17; --on-green:#ffffff; --hard:#050706; --wood:#d08f50; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --green:#2f9a5e; --green-deep:#0d3d22; --green-tint:#14271c;
+  --ink:#e8eee9; --muted:#9fb0a5; --line:#2a352e;
+  --bg:#0d110f; --card:#151b17; --on-green:#ffffff; --hard:#050706; --wood:#d08f50; color-scheme:dark}
+*{box-sizing:border-box}
+img{max-width:100%}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);margin:0}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem)}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
+h3{font-size:1.2rem;letter-spacing:.03em}
+p{margin:0}
+
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hard);border-bottom:4px solid var(--green)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding-block:12px}
+.brand .w{display:grid;place-items:center;width:34px;height:34px;background:var(--green);border:2px solid #fff;font-size:1.25rem}
+.links{display:flex;flex-wrap:wrap;gap:2px;margin-left:auto}
+.links a{color:#cfd8d2;text-decoration:none;font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.06em;font-size:.88rem;padding:16px 10px;border-bottom:3px solid transparent;margin-bottom:-4px}
+.links a:hover,.links a:focus-visible{color:#fff}
+.links a[aria-current="page"]{color:#fff;border-bottom-color:#fff}
+.menu-btn{display:none;margin-left:auto;background:none;border:2px solid #fff;color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;padding:6px 12px;cursor:pointer}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .links{display:none;width:100%;flex-direction:column;padding-bottom:10px}
+  .links.open{display:flex}
+  .links a{padding:10px 4px;border-bottom:1px solid #222;margin:0}
+  .links a[aria-current="page"]{border-bottom-color:#222;color:#fff;background:#1a221d}
+}
+
+/* Hero banner */
+.banner{background:var(--hard)}
+.banner img{display:block;width:100%;max-width:1600px;margin:0 auto;aspect-ratio:2033/774;object-fit:cover}
+
+main{max-width:1180px;margin:0 auto;padding:0 16px}
+.page{padding-block:40px 64px;display:grid;gap:40px}
+.page[hidden]{display:none}
+.lede{font-size:1.15rem;color:var(--muted);max-width:68ch}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--green);font-weight:600}
+.head{display:grid;gap:10px}
+.prose{display:grid;gap:14px;max-width:70ch}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-weight:600;text-decoration:none;padding:12px 20px;border:2px solid var(--green);background:var(--green);color:var(--on-green);cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--green-deep);border-color:var(--green-deep)}
+.btn.ghost{background:transparent;color:var(--green)}
+.btn.ghost:hover{background:var(--green-tint)}
+.btn:focus-visible,.links a:focus-visible,.menu-btn:focus-visible{outline:3px solid var(--wood);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Scoreboard strip */
+.board{background:var(--hard);color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-top:4px solid var(--green)}
+.board div{padding:18px 20px;border-right:1px solid #222}
+.board div:last-child{border-right:0}
+.board .k{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;color:#8fd1a8}
+.board .v{font-family:var(--display);font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums}
+
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
+.card.link{text-decoration:none;color:inherit;border-top:4px solid var(--green)}
+.card.link:hover{border-color:var(--green)}
+.card .go{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;color:var(--green);font-weight:600}
+.muted{color:var(--muted)}
+.fill{background:var(--green-tint);border:1px dashed var(--green);color:var(--ink);padding:2px 6px;font-size:.92em;white-space:nowrap}
+
+/* Steps for CMYBL */
+.steps{counter-reset:s;display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--card);border:1px solid var(--line);padding:16px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;background:var(--green);color:#fff;font-family:var(--display);font-weight:700;font-size:1.3rem}
+.steps strong{display:block}
+.split{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start}
+
+/* Callout */
+.callout{background:var(--green);color:var(--on-green);padding:28px;display:grid;gap:14px}
+.callout h2,.callout h3{color:#fff}
+.callout .btn{background:#fff;color:#0f6b3a;border-color:#fff}
+.callout .btn:hover{background:#e6f1ea}
+.callout p{max-width:66ch}
+
+/* Grade pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;border:2px solid var(--green);padding:4px 10px;color:var(--green);font-weight:600}
+
+/* Teams table */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:.82rem;background:var(--hard);color:#fff;font-weight:500}
+tr:last-child td{border-bottom:0}
+td.grade{font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--green);white-space:nowrap}
+
+/* Gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:600 .9rem var(--display);text-transform:uppercase;letter-spacing:.06em;background:transparent;color:var(--ink);border:2px solid var(--line);padding:6px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.gallery{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.ph{aspect-ratio:4/3;max-width:100%;position:relative;overflow:hidden;background:
+  repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 2px,transparent 2px 38px),
+  linear-gradient(160deg,#c98a4b,#a8652c);display:flex;align-items:flex-end}
+.ph.g{background:radial-gradient(circle at 50% 120%,#1f8a4d 0 40%,transparent 41%),linear-gradient(160deg,#c98a4b,#a8652c)}
+.ph.d{background:linear-gradient(160deg,#1b2a21,#0b0f0d)}
+.ph span{background:rgba(0,0,0,.72);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;padding:6px 10px;width:100%}
+.ph em{position:absolute;top:10px;left:10px;font-style:normal;background:#fff;color:#0f6b3a;font:700 .7rem var(--display);text-transform:uppercase;letter-spacing:.1em;padding:3px 7px}
+
+/* FAQ */
+.attrs{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.attr{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--green);padding:18px;display:grid;gap:8px}
+.attr h3{color:var(--green)}
+.faq{display:grid;gap:0;border-top:2px solid var(--ink)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 4px;font-family:var(--display);text-transform:uppercase;letter-spacing:.03em;font-size:1.1rem;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;color:var(--green);line-height:1;flex:none}
+details[open] summary::after{content:"\2212"}
+summary:focus-visible{outline:3px solid var(--wood);outline-offset:2px}
+.ans{padding:0 4px 22px;display:grid;gap:12px;max-width:72ch}
+.ans ul{margin:0;padding-left:20px;display:grid;gap:6px}
+
+/* Gyms */
+.gym h3{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.gym .town{font-family:var(--display);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* Sponsors */
+.sponsors{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.slot{aspect-ratio:3/2;max-width:100%;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;padding:10px}
+
+.flyer{width:100%;max-width:100%;aspect-ratio:16/9;object-fit:cover;border:4px solid var(--hard)}
+.camp .tag{justify-self:start;background:var(--hard);color:#fff;font:600 .72rem var(--display);text-transform:uppercase;letter-spacing:.1em;padding:3px 8px}
+.camp dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0}
+.camp dt{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:var(--muted);padding-top:2px}
+.camp dd{margin:0}
+.camp .btn{justify-self:start}
+ul.plain{margin:0;padding-left:20px;display:grid;gap:6px}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--green);outline-offset:0}
+.ok{background:var(--green-tint);border-left:4px solid var(--green);padding:12px 14px}
+
+footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
+.foot{max-width:1180px;margin:0 auto;padding:28px 16px;display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between;font-size:.95rem}
+.foot strong{color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em}
+.towns{font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;color:#fff}
+@media (prefers-reduced-motion:no-preference){.page:not([hidden]){animation:in .25s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-in">
+    <a class="brand" href="#home" data-go="home"><span class="w">W</span>Wachusett Travel Basketball</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    <div class="links" id="links">
+      <a href="#home" data-go="home">Home</a>
+      <a href="#schedule" data-go="schedule">Schedule</a>
+      <a href="#tryouts" data-go="tryouts">Tryouts</a>
+      <a href="#teams" data-go="teams">Teams</a>
+      <a href="#camps" data-go="camps">Camps &amp; Clinics</a>
+      <a href="#aau" data-go="aau">AAU &amp; Rec</a>
+      <a href="#gallery" data-go="gallery">Gallery</a>
+      <a href="#faq" data-go="faq">FAQ</a>
+      <a href="#contact" data-go="contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="banner"><img src="images/banner.jpg" alt="Wachusett Travel Basketball. Holden, Paxton, Princeton, Rutland, Sterling."></div>
+
+<main>
+
+<!-- HOME -->
+<section class="page" id="p-home" data-page="home">
+  <div class="board" role="list" aria-label="Season at a glance">
+    <div role="listitem"><div class="k">Grades</div><div class="v">4th to 8th</div></div>
+    <div role="listitem"><div class="k">League</div><div class="v">CMYBL</div></div>
+    <div role="listitem"><div class="k">Game day</div><div class="v">Sundays</div></div>
+    <div role="listitem"><div class="k">Season</div><div class="v">Dec to Mar</div></div>
+  </div>
+
+  <div class="head">
+    <span class="eyebrow">Boys and girls, grades 4 to 8</span>
+    <h1>One district. Five towns. One team.</h1>
+    <p class="lede">Wachusett Travel Basketball is a private, non-profit program giving kids from Holden, Paxton, Princeton, Rutland and Sterling the chance to play competitive, organized team basketball in the Central Mass Youth Basketball League.</p>
+  </div>
+
+  <div class="grid">
+    <a class="card link" href="#schedule" data-go="schedule"><h3>Schedule &amp; Standings</h3><p class="muted">Game times, locations, scores and standings, live from the CMYBL.</p><span class="go">Find your team</span></a>
+    <a class="card link" href="https://calendar.google.com/calendar/embed?src=wachusetttravelbasketball%40gmail.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener"><h3>Practice Calendar</h3><p class="muted">Every team's practice times, kept up to date by our coaches.</p><span class="go">See practices</span></a>
+    <a class="card link" href="#tryouts" data-go="tryouts"><h3>Tryouts &amp; Registration</h3><p class="muted">Who can try out, what we look for, and how to register.</p><span class="go">Get ready</span></a>
+    <a class="card link" href="#faq" data-go="faq"><h3>Our Philosophy</h3><p class="muted">How teams are picked, what's expected, and answers to common questions.</p><span class="go">Read the FAQ</span></a>
+  </div>
+
+  <div class="callout">
+    <span class="eyebrow" style="color:#bfe6cd">News</span>
+    <h2>Tryouts: Sept. 27 &amp; Oct. 4</h2>
+    <p>Both sessions are at the Wachusett Regional High School gym. Grades 4 and 5 run 6:30 to 7:30 PM, grades 6 and 7 run 7:30 to 8:30 PM, and grade 8 runs 8:30 to 9:30 PM. Please register before your child's tryout.</p>
+    <div class="row"><a class="btn" href="https://forms.gle/6WHgHT7RouUtRB1R9" target="_blank" rel="noopener">Register now</a><a class="btn" style="background:transparent;color:#fff" href="#tryouts" data-go="tryouts">Tryout details</a></div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="page" id="p-schedule" data-page="schedule" hidden>
+  <div class="head">
+    <span class="eyebrow">Powered by CMYBL</span>
+    <h1>Schedule, Standings &amp; Practices</h1>
+    <p class="lede">All Wachusett game schedules, scores and standings are kept by the Central Mass Youth Basketball League. The league site always has the latest times, reschedules and cancellations.</p>
+  </div>
+  <div class="row">
+    <a class="btn" href="https://cmybl.org/launch.php" target="_blank" rel="noopener">Open CMYBL Schedule</a>
+    <a class="btn ghost" href="https://cmybl.org/launch.php" target="_blank" rel="noopener">Open CMYBL Standings</a>
+  </div>
+
+  <div class="callout">
+    <span class="eyebrow" style="color:#bfe6cd">Practices</span>
+    <h2>Practice Calendar</h2>
+    <p>Practice times change often, since gym time is limited and coaches sometimes trade slots. Check the Wachusett Travel Basketball practice calendar for your team's latest practices. Games are on the CMYBL site.</p>
+    <div class="row"><a class="btn" href="https://calendar.google.com/calendar/embed?src=wachusetttravelbasketball%40gmail.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener">Open Practice Calendar</a></div>
+  </div>
+
+  <div class="split">
+    <div class="head">
+      <h2>Find your team in 4 steps</h2>
+      <ol class="steps">
+        <li><div><strong>Open the CMYBL site</strong><span class="muted">Tap Schedule or Standings at the top.</span></div></li>
+        <li><div><strong>Pick gender and grade</strong><span class="muted">Boys or Girls, then 4th through 8th.</span></div></li>
+        <li><div><strong>Choose Town: Wachusett</strong><span class="muted">Then select your child's team or division and tap Search.</span></div></li>
+        <li><div><strong>Save it as your Favorite Team</strong><span class="muted">Next time, your team's games show up right away.</span></div></li>
+      </ol>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr">
+      <div class="card"><h3>Weekly game reminders</h3><p>Anyone can sign up on the CMYBL site for a weekly email of upcoming games. Choose Schedule, find your team, then "Click to Enroll." Players and coaches on a roster with an email on file get reminders automatically.</p></div>
+      <div class="card"><h3>Home court</h3><p>All home games are at Wachusett Regional High School, 1401 Main Street, Holden. Away gym addresses are on the CMYBL schedule.</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Wachusett+Regional+High+School+Holden+MA" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="card"><h3>Reading the schedule</h3><p><strong style="color:#d9822b">Orange</strong> means forfeited, <strong style="color:#2f6fd6">blue</strong> means rescheduled, and <strong style="color:#c8382f">red</strong> means cancelled. Tap a gym name for the address and directions.</p></div>
+      <div class="card"><h3>Playoffs and Top 25</h3><p>Playoff brackets and the Top 25 are on the same CMYBL site. Playoffs are usually the first weekend of March.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRYOUTS -->
+<section class="page" id="p-tryouts" data-page="tryouts" hidden>
+  <div class="head">
+    <span class="eyebrow">Tryouts &amp; Registration</span>
+    <h1>Ready to try out?</h1>
+    <p class="lede">Travel teams are select teams. Interest is high, and not every player who tries out will be placed on a team. Players must try out every season.</p>
+  </div>
+
+  <div class="split">
+    <div class="card"><h3>Who's eligible</h3>
+      <p>Players who live in or go to school in the Wachusett Regional School District.</p>
+      <div class="pills"><span class="pill">Grade 4</span><span class="pill">Grade 5</span><span class="pill">Grade 6</span><span class="pill">Grade 7</span><span class="pill">Grade 8</span></div>
+      <p class="muted">Boys and girls teams. One or two teams per grade, depending on interest and resources.</p>
+    </div>
+    <div class="card"><h3>Season fee</h3>
+      <p><span style="font-family:var(--display);font-size:2.4rem;font-weight:700;color:var(--green);line-height:1">$390</span> <span class="muted">per player, per season</span></p>
+      <p>Uniforms are not included. Uniforms can be reused each year, so returning players only need a new one if theirs no longer fits.</p>
+    </div>
+    <div class="card"><h3>What to bring</h3>
+      <p>Basketball shoes, water, and a completed registration. Arrive a few minutes early to check in.</p>
+      <p class="muted">Parents: please drop off or take a back seat. Tryouts are less stressful for kids without an audience.</p>
+    </div>
+  </div>
+
+  <div class="split">
+    <div class="head">
+      <h2>Tryout schedule</h2>
+      <p class="muted">Sunday, Sept. 27 and Sunday, Oct. 4 at the Wachusett Regional High School gymnasium.</p>
+      <div class="tbl-wrap">
+        <table style="min-width:0">
+          <thead><tr><th>Grades</th><th>Time</th></tr></thead>
+          <tbody>
+            <tr><td class="grade">4th &amp; 5th</td><td>6:30 to 7:30 PM</td></tr>
+            <tr><td class="grade">6th &amp; 7th</td><td>7:30 to 8:30 PM</td></tr>
+            <tr><td class="grade">8th</td><td>8:30 to 9:30 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <img class="flyer" src="images/flyer.jpg" alt="Tryouts flyer: Sept. 27 and Oct. 4 at Wachusett Regional High School gymnasium. 4th and 5th grade 6:30 to 7:30 PM, 6th and 7th grade 7:30 to 8:30 PM, 8th grade 8:30 to 9:30 PM.">
+  </div>
+
+  <div class="callout">
+    <h2>Register for tryouts</h2>
+    <p>Complete the registration form before your child's tryout session. Questions? Reach out on the Contact page.</p>
+    <div class="row"><a class="btn" href="https://forms.gle/6WHgHT7RouUtRB1R9" target="_blank" rel="noopener">Open registration form</a></div>
+  </div>
+</section>
+
+<!-- TEAMS -->
+<section class="page" id="p-teams" data-page="teams" hidden>
+  <div class="head">
+    <span class="eyebrow">2026-2027 season</span>
+    <h1>Teams &amp; Coaches</h1>
+    <p class="lede">Our coaches are carefully selected volunteers with basketball experience at the high school or college level. Every coach is CORI'd through the Commonwealth of Massachusetts and receives annual training and feedback from our Board of Directors.</p>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Team</th><th>Head Coach</th><th>Assistant(s)</th><th>CMYBL Division</th></tr></thead>
+      <tbody>
+        <tr><td class="grade">4th Girls</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">4th Boys</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">5th Girls</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">5th Boys</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">6th Girls</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">6th Boys</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">7th Girls</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">7th Boys</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">8th Girls</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+        <tr><td class="grade">8th Boys</td><td><span class="fill">Name</span></td><td><span class="fill">Names</span></td><td><span class="fill">Division</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card"><h3>Interested in coaching?</h3><p>Coaches are selected each fall at our coaches meeting, which covers season expectations and tryout evaluation assignments. Final coaching assignments are made once teams are set. Please bring a completed Massachusetts CORI form and a photocopy of your driver's license to the meeting.</p><div class="row"><a class="btn ghost" href="#contact" data-go="contact">Let us know you're interested</a></div></div>
+</section>
+
+<!-- CAMPS -->
+<section class="page" id="p-camps" data-page="camps" hidden>
+  <div class="head">
+    <span class="eyebrow">Year-round development</span>
+    <h1>Camps &amp; Clinics</h1>
+    <p class="lede">Skill camps and clinics are a great way to get ready for tryouts, sharpen fundamentals in the off-season, or try basketball for the first time. Listings are added as dates are confirmed.</p>
+  </div>
+  <div class="grid">
+    <div class="card camp"><span class="tag">Clinic</span><h3><span class="fill">Clinic name</span></h3>
+      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">e.g. 3 to 8</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
+      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
+    <div class="card camp"><span class="tag">Holiday camp</span><h3><span class="fill">Camp name</span></h3>
+      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">Grades</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
+      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
+    <div class="card camp"><span class="tag">Summer camp</span><h3><span class="fill">Camp name</span></h3>
+      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">Grades</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
+      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
+  </div>
+  <div class="card"><h3>Run a camp or clinic in the district?</h3><p>We're happy to share programs that serve Wachusett players. Send the details through the Contact page.</p></div>
+</section>
+
+<!-- AAU & REC -->
+<section class="page" id="p-aau" data-page="aau" hidden>
+  <div class="head">
+    <span class="eyebrow">More ways to play</span>
+    <h1>AAU &amp; Rec Basketball</h1>
+    <p class="lede">Travel basketball is our winter competitive program. Here's how it fits with other options in the area, so every Wachusett kid can find the right place to play.</p>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th></th><th>Rec League</th><th>Travel (us)</th><th>AAU</th></tr></thead>
+      <tbody>
+        <tr><td class="grade">Who</td><td>Everyone who signs up</td><td>Selected by tryout, grades 4 to 8</td><td>Selected by club tryout</td></tr>
+        <tr><td class="grade">When</td><td><span class="fill">Season</span></td><td>December to early March</td><td>Spring and summer</td></tr>
+        <tr><td class="grade">Commitment</td><td>Lower</td><td>2 practices a week, Sunday games</td><td>Higher, with weekend tournaments and travel</td></tr>
+        <tr><td class="grade">Run by</td><td>Town or local rec program</td><td>Wachusett Travel Basketball, in the CMYBL</td><td>Independent private clubs</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="split">
+    <div class="card"><h3>Rec basketball</h3><p>A great fit for new players, younger kids, and anyone who wants to play for fun. Many travel players got their start in rec.</p>
+      <ul class="plain">
+        <li><strong>Holden:</strong> <span class="fill">Program and link</span></li>
+        <li><strong>Paxton:</strong> <span class="fill">Program and link</span></li>
+        <li><strong>Princeton:</strong> <span class="fill">Program and link</span></li>
+        <li><strong>Rutland:</strong> <span class="fill">Program and link</span></li>
+        <li><strong>Sterling:</strong> <span class="fill">Program and link</span></li>
+      </ul></div>
+    <div class="card"><h3>AAU basketball</h3><p>AAU clubs play in the spring and summer and are separate from Wachusett Travel Basketball. Each club runs its own tryouts, fees and schedule. Making or not making a travel team has no effect on AAU, and AAU doesn't guarantee a travel roster spot.</p>
+      <ul class="plain">
+        <li><span class="fill">Club name and link</span></li>
+        <li><span class="fill">Club name and link</span></li>
+      </ul>
+      <p class="muted">Listing a club here is for information only and is not an endorsement.</p></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="p-gallery" data-page="gallery" hidden>
+  <div class="head">
+    <span class="eyebrow">Gallery</span>
+    <h1>Game day in Wachusett</h1>
+    <p class="lede">Team photos, game action and tournament moments. Families can share photos with the board to be added.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter photos">
+    <button aria-pressed="true" data-f="all">All</button>
+    <button aria-pressed="false" data-f="team">Team photos</button>
+    <button aria-pressed="false" data-f="game">Game action</button>
+    <button aria-pressed="false" data-f="tourney">Tournaments</button>
+  </div>
+  <div class="gallery" id="gallery">
+    <div class="ph d" data-c="team"><em>2025-26</em><span>8th Grade Boys team photo</span></div>
+    <div class="ph" data-c="game"><em>2025-26</em><span>6th Girls vs. Leominster</span></div>
+    <div class="ph g" data-c="game"><em>2025-26</em><span>Tip-off, home opener</span></div>
+    <div class="ph d" data-c="team"><em>2025-26</em><span>7th Grade Girls team photo</span></div>
+    <div class="ph g" data-c="tourney"><em>2025-26</em><span>Holiday tournament</span></div>
+    <div class="ph" data-c="game"><em>2025-26</em><span>5th Boys fast break</span></div>
+    <div class="ph d" data-c="team"><em>2025-26</em><span>4th Grade Girls team photo</span></div>
+    <div class="ph g" data-c="tourney"><em>2025-26</em><span>CMYBL playoffs</span></div>
+  </div>
+  <p class="muted">Sample tiles show the layout. Your photos replace them.</p>
+</section>
+
+<!-- FAQ -->
+<section class="page" id="p-faq" data-page="faq" hidden>
+  <div class="head">
+    <span class="eyebrow">FAQ &amp; Philosophy</span>
+    <h1>Our Philosophy</h1>
+  </div>
+  <div class="prose">
+    <p class="lede">Wachusett Travel Basketball operates as a private, non-profit organization that manages the winter competitive basketball experience for boys and girls in grades 4 through 8 who live in or attend school in the Wachusett Regional School District. We give the kids of Wachusett the chance to play competitive team basketball in an organized league through the Central Mass Youth Basketball League (CMYBL).</p>
+    <p>Demand to play is typically greater than the number of roster spots. Limited gym space, CMYBL rules and the competitive nature of the program make travel teams "select," a practice we share with virtually every other town in the league. Please understand before registering that not every player who tries out will be selected.</p>
+  </div>
+
+  <div class="head"><h2>What we look for at tryouts</h2><p class="muted">Travel teams are for kids dedicated to becoming better basketball players this winter. Evaluators focus on four attributes.</p></div>
+  <div class="attrs">
+    <div class="attr"><h3>Athleticism</h3><p>Basketball is fast-paced and physically demanding. Good conditioning and the potential to be an above-average athlete are ranked very high at every grade.</p></div>
+    <div class="attr"><h3>Skill</h3><p>We're a teaching program, but beyond grade 5 the focus shifts from introducing skills to refining them. Older players should know the rules and basic offensive and defensive strategy.</p></div>
+    <div class="attr"><h3>Attitude</h3><p>From winter availability to hustle at tryouts, we expect every player to show a positive attitude in tryouts and in league play.</p></div>
+    <div class="attr"><h3>Coachability</h3><p>Listens to instruction and applies it, accepts feedback with good body language, and shows respect for players, coaches and referees.</p></div>
+  </div>
+
+  <div class="head"><h2>Frequently asked questions</h2></div>
+  <div class="faq">
+    <details open><summary>Who is eligible to try out?</summary><div class="ans"><ul><li>Players must live in or go to school in the Wachusett Regional School District.</li><li>Players must be in grades 4 through 8.</li></ul></div></details>
+
+    <details><summary>How are teams selected?</summary><div class="ans">
+      <p><strong>Grades 4 and 5:</strong> We make every attempt to build rosters that support both individual and team development. Our goal is two equal teams, in line with the CMYBL structure of minimal division between talent levels. Players must try out every season, and past participation does not guarantee a spot. Returning players shouldn't expect the same roster or coach each year, though in general most returning players end up on a team fairly similar to last season's.</p>
+      <p><strong>Grades 6, 7 and 8:</strong> Selection is much more talent focused. Teams are divided into divisions, and we aim to pick the roster best able to compete in highly competitive games.</p>
+      <p>Most teams use independent evaluators (people who are not coaching and have no children in that division) who observe and sometimes run tryouts, then work with the head coaches on roster selection.</p>
+    </div></details>
+
+    <details><summary>My child wasn't selected. Can we get feedback?</summary><div class="ans">
+      <p>Yes. We're happy to share where your child can improve so they can try out again in future seasons. Once teams are finalized, we ask that you respect the rosters.</p>
+      <p>Team assignments are decided by coaches, directors and evaluators only. Given the complications that can arise, we do not discuss specific player rankings or why rosters were made the way they were. Final decisions rest with the directors, coaches and those they appoint.</p>
+    </div></details>
+
+    <details><summary>How much does it cost?</summary><div class="ans"><p>The season fee is $390 per player. Uniforms are not included and are purchased separately if needed. Players can reuse their uniform each year, so returning players only need a new one if theirs no longer fits.</p></div></details>
+
+    <details><summary>Who will coach my child?</summary><div class="ans">
+      <p>Our coaches are carefully selected men and women with significant basketball experience at the high school or college level. All are CORI'd through the Commonwealth of Massachusetts and receive annual training, individual feedback and updates from our Board of Directors.</p>
+      <p>Coaches, and occasionally directors, will talk with parents about their child's progress during the season. If you have an issue your child's coach isn't addressing, please feel free to contact any member of the Board.</p>
+    </div></details>
+
+    <details><summary>How many players make each team?</summary><div class="ans"><p>Roster size varies, but our teams have historically carried 10 to 11 players. Depending on talent, resources and interest, we support one or two teams at each grade.</p></div></details>
+
+    <details><summary>Why don't you take more kids?</summary><div class="ans"><p>Wachusett already supports more teams per age group than most CMYBL programs. We're a teaching program, but playing to win is a main goal of a competitive team. Our mission is to balance the number of players we accept with a strong season that best prepares kids for high school basketball.</p></div></details>
+
+    <details><summary>Why are there more boys teams than girls teams?</summary><div class="ans"><p>The trend has started to shift in recent years, but more boys than girls still try out. We build teams based on the number of players who try out.</p></div></details>
+
+    <details><summary>What's the parent's role during tryouts?</summary><div class="ans">
+      <p>Beyond supporting your child, we strongly recommend parents take a back seat. Kids usually find tryouts more stressful with parents watching, so consider dropping off. If you do stay, please don't interfere in any way.</p>
+      <p>During tryouts, please don't ask coaches how your child is doing or how many players they plan to keep.</p>
+    </div></details>
+
+    <details><summary>Can my child play another winter sport too?</summary><div class="ans">
+      <p>Most travel players play only basketball in the winter, though a few families make two sports work. Practice schedules vary by team, and a coach can't build a team's schedule around one player's other activity. If your child has indoor soccer a couple of evenings a week or hockey every Sunday, travel basketball probably won't fit.</p>
+      <p>Some coaches, especially in the upper grades, may choose a player who is committing to basketball over one balancing another scheduled sport. Players who miss a substantial number of practices or games may be replaced by a player who can fully commit.</p>
+    </div></details>
+
+    <details><summary>What's the practice schedule?</summary><div class="ans">
+      <p>Players are expected to attend all scheduled practices, arriving on time and staying until the end. Teams generally practice twice a week from when teams are made through December, then once or twice a week in January and February. Some coaches may skip a week or practice three times, and coaches often trade practice times.</p>
+      <p>Gym time in Wachusett is limited, so please plan for some flexibility this winter.</p>
+      <p><a href="https://calendar.google.com/calendar/embed?src=wachusetttravelbasketball%40gmail.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener">See the practice calendar</a></p>
+    </div></details>
+
+    <details><summary>When and where are games?</summary><div class="ans">
+      <p>League games are Sunday afternoons, starting between 12:00 and 5:00 depending on each town's gym. Games run every Sunday from early December to late February, except during school vacation weeks. There is a game on Martin Luther King Day weekend.</p>
+      <p>Most Wachusett teams play in the CMYBL, led by commissioner Josh Hammer. Most opponents are within about 45 minutes, and most under 30. Expect 30 to 50 percent of games at home, with the rest at opponents' gyms or the occasional neutral site. The full league schedule is published about 10 days before the season starts.</p>
+      <p>Playoffs are usually the first weekend of March and may include Saturday games. Teams may also play in 2 or 3 tournaments and some non-league games at the coach's discretion.</p>
+      <p><a href="#schedule" data-go="schedule">See this season's schedule</a></p>
+    </div></details>
+    <details><summary>What are the gym rules?</summary><div class="ans"><p>Sneakers only on the court, clean up the bleachers, and keep siblings off the floor between games. Gym time is a privilege we share across five towns.</p></div></details>
+  </div>
+
+  <div class="callout">
+    <h3>A big commitment, and a lot of fun</h3>
+    <p>Travel basketball is a large winter commitment. If you're new to the program, we encourage you to talk with other Wachusett families about what to expect.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="page" id="p-contact" data-page="contact" hidden>
+  <div class="head">
+    <span class="eyebrow">Contact &amp; Sponsors</span>
+    <h1>Get in touch</h1>
+    <p class="lede">Questions about tryouts, registration, coaching or sponsorship? Send us a note and a board member will get back to you.</p>
+  </div>
+  <div class="split">
+    <form id="contactForm">
+      <label for="cName">Your name<input id="cName" required autocomplete="name"></label>
+      <label for="cEmail">Email<input id="cEmail" type="email" required autocomplete="email"></label>
+      <label for="cTopic">Topic<select id="cTopic"><option>Tryouts &amp; registration</option><option>Coaching</option><option>Sponsorship</option><option>Photos for the gallery</option><option>Something else</option></select></label>
+      <label for="cMsg">Message<textarea id="cMsg" rows="5" required></textarea></label>
+      <div><button class="btn" type="submit">Send message</button></div>
+      <p class="ok" id="formOk" hidden>Preview only. On Google Sites, this becomes an embedded Google Form.</p>
+    </form>
+    <div class="grid" style="grid-template-columns:1fr">
+      <div class="card"><h3>Email</h3><p><a id="emailAddr" href="mailto:wachusetttravelbasketball@gmail.com" style="font-weight:600;word-break:break-all">wachusetttravelbasketball@gmail.com</a></p><div><button class="btn ghost" type="button" id="copyEmail">Copy email</button></div></div>
+      <div class="card"><h3>Board of Directors</h3><ul class="plain board-list"><li>Adam Deluca</li><li>Tom Sullivan</li><li>Mike Leahy</li><li>Jay Blackburn</li><li>Tim Yurkus</li><li>Sabrina Heiniluoma</li></ul></div>
+    </div>
+  </div>
+
+  <div class="head"><h2>Thank you to our sponsors</h2><p class="muted">Local businesses help keep travel basketball affordable for Wachusett families.</p></div>
+  <div class="sponsors">
+    <div class="slot">Sponsor logo</div><div class="slot">Sponsor logo</div><div class="slot">Sponsor logo</div><div class="slot">Sponsor logo</div><div class="slot">Sponsor logo</div><div class="slot">Become a sponsor</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div><strong>Wachusett Travel Basketball</strong><br>A private, non-profit youth program.<br>wachusetttravelbasketball@gmail.com<br>Member of the Central Mass Youth Basketball League.</div>
+    <div class="towns">Holden | Paxton | Princeton | Rutland | Sterling<br><span style="letter-spacing:.06em;color:#8fd1a8">wachusettbasketball.com</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pages=["home","schedule","tryouts","teams","camps","aau","gallery","faq","contact"];
+  var links=document.getElementById("links"), btn=document.getElementById("menuBtn");
+  function show(p,scroll){
+    if(pages.indexOf(p)<0)p="home";
+    document.querySelectorAll(".page").forEach(function(s){s.hidden=s.dataset.page!==p});
+    document.querySelectorAll(".links a").forEach(function(a){a.toggleAttribute("aria-current",a.dataset.go===p);if(a.dataset.go===p)a.setAttribute("aria-current","page")});
+    links.classList.remove("open");btn.setAttribute("aria-expanded","false");
+    if(scroll)window.scrollTo({top:0});
+  }
+  document.addEventListener("click",function(e){
+    var a=e.target.closest("[data-go]");if(!a)return;
+    e.preventDefault();show(a.dataset.go,true);
+    try{history.replaceState(null,"","#"+a.dataset.go)}catch(_){}
+  });
+  btn.addEventListener("click",function(){var o=links.classList.toggle("open");btn.setAttribute("aria-expanded",o)});
+  show((location.hash||"#home").slice(1),false);
+
+  document.querySelectorAll(".filters button").forEach(function(b){
+    b.addEventListener("click",function(){
+      document.querySelectorAll(".filters button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+      var f=b.dataset.f;
+      document.querySelectorAll("#gallery .ph").forEach(function(t){t.hidden=!(f==="all"||t.dataset.c===f)});
+    });
+  });
+  var ce=document.getElementById("copyEmail");
+  ce.addEventListener("click",function(){
+    var t="wachusetttravelbasketball@gmail.com";
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById("emailAddr"));var w=getSelection();w.removeAllRanges();w.addRange(r);ce.textContent="Selected, press copy"}
+    try{navigator.clipboard.writeText(t).then(function(){ce.textContent="Copied"},sel)}catch(_){sel()}
+  });
+  document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();document.getElementById("formOk").hidden=false});
+})();
+</script>
+
+</body>
+</html>
