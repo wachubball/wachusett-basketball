@@ -158,6 +158,7 @@ summary:focus-visible{outline:3px solid var(--wood);outline-offset:2px}
 .camp dt{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:var(--muted);padding-top:2px}
 .camp dd{margin:0}
 .camp .btn{justify-self:start}
+.clinic-flyer{width:100%;max-width:520px;aspect-ratio:1/1;object-fit:cover;border:1px solid var(--line);justify-self:center}
 ul.plain{margin:0;padding-left:20px;display:grid;gap:6px}
 form{display:grid;gap:14px;max-width:560px}
 label{font-weight:600;display:grid;gap:6px}
@@ -347,16 +348,25 @@ footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
     <h1>Camps &amp; Clinics</h1>
     <p class="lede">Skill camps and clinics are a great way to get ready for tryouts, sharpen fundamentals in the off-season, or try basketball for the first time. Listings are added as dates are confirmed.</p>
   </div>
-  <div class="grid">
-    <div class="card camp"><span class="tag">Clinic</span><h3><span class="fill">Clinic name</span></h3>
-      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">e.g. 3 to 8</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
-      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
-    <div class="card camp"><span class="tag">Holiday camp</span><h3><span class="fill">Camp name</span></h3>
-      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">Grades</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
-      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
-    <div class="card camp"><span class="tag">Summer camp</span><h3><span class="fill">Camp name</span></h3>
-      <dl><dt>When</dt><dd><span class="fill">Dates and times</span></dd><dt>Where</dt><dd><span class="fill">Gym</span></dd><dt>Grades</dt><dd><span class="fill">Grades</span></dd><dt>Cost</dt><dd><span class="fill">$</span></dd></dl>
-      <a class="btn ghost" href="#contact" data-go="contact">Sign-up link</a></div>
+  <div class="split">
+    <div class="card camp"><span class="tag">Day off from school</span><h3>Veterans Day Clinic</h3>
+      <p>Day off from school? Come get better with Coach Berman of Green Light Basketball Academy.</p>
+      <dl>
+        <dt>When</dt><dd>Wednesday, November 11, 2026<br>9:00 AM to 3:00 PM</dd>
+        <dt>Where</dt><dd>Wachusett Regional High School</dd>
+        <dt>Grades</dt><dd>3 to 9</dd>
+        <dt>Cost</dt><dd>$65 early bird, before October 31<br>$80 after October 31</dd>
+      </dl>
+      <a class="btn" href="https://greenlightbasketballacademy.com/" target="_blank" rel="noopener">Register at GreenLightBasketballAcademy.com</a>
+    </div>
+    <img class="clinic-flyer" src="images/greenlight-veterans-day-clinic.jpg" alt="Green Light Basketball Academy Veterans Day Clinic flyer: November 11, 2026, grades 3 to 9, 9 AM to 3 PM at Wachusett Regional High School. Early bird $65 before October 31, $80 after." loading="lazy">
+  </div>
+
+  <div class="callout" id="mailing-list">
+    <span class="eyebrow" style="color:#bfe6cd">Stay in the loop</span>
+    <h2>Join our mailing list</h2>
+    <p>Get emails about camps, clinics, tryouts and other basketball opportunities for Wachusett players.</p>
+    <div class="row"><a class="btn" id="mailingListBtn" href="mailto:wachusetttravelbasketball@gmail.com?subject=Add%20me%20to%20the%20mailing%20list">Click here to join the mailing list</a></div>
   </div>
   <div class="card"><h3>Run a camp or clinic in the district?</h3><p>We're happy to share programs that serve Wachusett players. Send the details through the Contact page.</p></div>
 </section>
@@ -533,7 +543,7 @@ footer{background:var(--hard);color:#aab6ae;border-top:4px solid var(--green)}
 
 <footer>
   <div class="foot">
-    <div><strong>Wachusett Travel Basketball</strong><br>A private, non-profit youth program.<br>wachusetttravelbasketball@gmail.com<br>Member of the Central Mass Youth Basketball League.</div>
+    <div><strong>Wachusett Travel Basketball</strong><br>A private, non-profit youth program.<br>wachusetttravelbasketball@gmail.com<br>Member of the Central Mass Youth Basketball League.<br><a href="#camps" data-go="camps" style="color:#8fd1a8">Join our mailing list</a></div>
     <div class="towns">Holden | Paxton | Princeton | Rutland | Sterling<br><span style="letter-spacing:.06em;color:#8fd1a8">wachusetttravelbasketball.com</span></div>
   </div>
 </footer>
